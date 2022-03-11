@@ -20,6 +20,10 @@ ifconfig eth0 up -> to activate the network interface
 ``` 
 ![Image](p2.png)
 
+**Important note 1 -> I can't change the physical MAC address, only the virtual one, which is going to be restored after a system restart**
+
+**Important note 2 -> With a changed MAC address, I have an increased anonimity, I can impersonate other devices and bypass filters**
+
 In this project, I created a Python script to change the MAC address, using only a single command
 ```
 mac_changer.py -i eth0 -m 00:11:22:33:44:55
